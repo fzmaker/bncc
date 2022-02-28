@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahasa CPP</title>
+    <link rel="stylesheet" href="bahasa.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<style>
+    body{
+        background-image: url('honeycomb.jpg');
+        @media only screen and (max-width:500px)
+        }
+</style>
+
+<body>
+  <div class="text" >
+    <font face="lucida console" size="5px" color="#0a5169">
+       <b>Halo Coders!</b> <hr>
+    </font>
+
+    <font face="monospace" size="3px" color="black">
+    <div>
+        Bahasa pemrograman C++ banyak digunakan untuk membuat berbagai aplikasi. Oleh karena itu, bagi Anda yang masih pemula, 
+        belajar C++ bisa menjadi langkah tepat untuk membangun karir sebagai seorang developer handal. <br><br>
+
+        Nah, bagaimana menguasai bahasa pemrograman C++ dengan baik? Tenang saja, di artikel ini kami akan membahas semuanya, 
+        mulai dari pengertian, konsep dasar, keunggulan, dan contoh program C++. <br><br>
+
+        Yuk langsung simak course ini!
+    </div>
+    </font> <hr><br>
+
+    <center>
+        <img src="cpp.png" alt="cpp_icon" width="200px" > <br>
+    </center>  
+    <font face="lucida console" size="5px" color="#d49139">
+        <b>Apa itu Bahasa Pemrograman C++?</b><hr>
+    </font>
+    <font face="monospace" size="3px" color="black">
+        <div>
+            Bahasa pemrograman C++ adalah bahasa yang bisa digunakan untuk membuat berbagai aplikasi. Misalnya, aplikasi pengolah 
+            gambar, software gadget, game, hingga sistem operasi baru. <br><br>
+
+            Bahasa ini dikembangkan dari bahasa pemrograman C. Tak heran kalau dua bahasa ini memiliki sintaks dan struktur kode 
+            yang sama. Bedanya, C++ merupakan Object Oriented Programming (OOP) sedangkan C merupakan bahasa pemrograman prosedural. <br><br>
+
+            Artinya, bahasa pemrograman C++ memiliki data dan function yang disatukan dalam kelas dan objek untuk bekerjasama 
+            memecahkan sebuah masalah. Jadi ketika Anda ingin mengubah fungsi, tidak perlu mengubah keseluruhan program. Dengan 
+            begitu, pengubahan kode akan lebih fleksibel. <br><br>
+
+            Hal ini tidak bisa dilakukan dalam bahasa pemrograman C yang bersifat prosedural, di mana data dan function terpisah 
+            dan harus dibaca satu persatu oleh compiler. Sehingga ketika Anda ingin mengubah fungsi, Anda perlu mengubah 
+            keseluruhan program.
+        </div>
+    </font> <br>
+
+    <font face="lucida console" size="5px" color="#0a5169">
+        <b>Konsep Dasar Bahasa Pemrograman C++</b><hr>
+    </font>
+    <font face="monospace" size="3px" color="black">
+        <div>
+            Kalau Anda ingin belajar C++, penting untuk memahami konsep dasar bahasa pemrograman C++ berikut ini: <br><br>
+
+            <b> 1. Variabel</b> <br>
+            Variabel adalah penanda identitas yang digunakan untuk menampung suatu nilai. Artinya, variabel akan menunjukkan suatu 
+            lokasi yang ada di memori komputer atau RAM. Jadi, saat Anda membuat satu variabel, akan ada satu slot memori untuk 
+            menampung nilai tersebut. <br><br>
+
+            Bahasa C++ termasuk bahasa pemrograman dengan konsep strongly typed. Artinya, saat melakukan deklarasi, Anda harus 
+            memberi tipe data di dalam setiap variabel. <br><br>
+
+            Berikut ini adalah tipe-tipe data yang ada di dalam variabel C++: <br>
+            1. bool: tipe data berupa nilai boolean, yaitu True or False <br>
+            2. char: tipe data huruf dari A sampai Z <br>
+            3. int: tipe data berupa angka <br>
+            4. float dan double: tipe data berupa angka pecahan, contohnya 1,33 <br>
+            5. string: tipe data berupa kumpulan karakter seperti “belajar bahasa c++” <br><br>
+            
+            Lalu bagaimana cara menuliskan variabel dalam bahasa C++? Ada dua langkah untuk melakukannya, yaitu deklarasi dan 
+            inisialisasi. Deklarasi dilakukan sebelum program dimulai. Namun, Anda juga bisa melakukan deklarasi di tengah 
+            program. Akan tetapi, deklarasi harus sudah selesai sebelum Anda menggunakan program. <br> <br>
+            Berikut ini adalah contoh <b>deklarasi</b>:
+        </div>
+        <div class="container">
+                int i; // contoh deklarasi <br>
+                char c; <br>
+                int i, j, k; // banyak deklarasi
+        </div> <br><br>
+
+        <div>
+            Sedangkan <b>inisialisasi</b> artinya mengisi nilai di dalam variabel yang sudah dideklarasikan. Contohnya seperti ini:
+        </div>
+        <div class="container">
+            int i; // contoh deklarasi <br>
+            i = 10; <br>
+        </div> <br><br>
+        Ada dua cakupan dalam bahasa C++, yaitu <b>Variabel Global</b> dan <b>Variabel Lokal</b>. <br><br>
+
+        Variabel global adalah variabel yang ketika Anda deklarasikan, bisa digunakan lagi dalam class dan function apapun selama 
+        program masih berjalan. Variabel ini dideklarasikan di luar function main(). Contohnya seperti ini:
+
+        <div class="container">
+            #include (iostream) <br>
+            using namespace std; <br>
+            int x;                // Deklarasi variabel global <br> 
+            int main() <br>
+            { <br>
+                x=10;             // inisialisasi pertama <br>
+                cout <<"first value of x = "<< x; <br>
+                x=20;             // inisialisasi kedua <br>
+                cout <<"diinisialisasi lagi dengan value = "<< x; <br>
+            }
+        </div> <br><br>
+        Sedangkan <b>variabel lokal</b> adalah variabel yang hanya bisa berfungsi jika dideklarasikan di dalam function main(). 
+        Artinya, jika dideklarasikan di luar main () maka Anda akan menemui error.
+
+        <div class="container">
+            #include (iostream) <br>
+            using namespace std; <br>
+            int main() <br>
+            { <br>
+                int i=10;             <br>
+                if(i<-20)        // batas awal cakupan (i kurang dari 20) <br>
+                { <br>
+                int n=100;   // variabel lokal dideklarasikan dan diinisialisasi <br>
+                }              // batas akhir cakupan <br>
+                cout << n;      // Compile time error <br>
+                }
+        </div> <br><br>
+    </font> <br>
+
+    <font face="lucida console" size="5px" color="#d49139">
+        <b>Keunggulan Bahasa Pemrograman C++</b><hr>
+    </font>
+    <font face="monospace" size="3px" color="black">
+        <div>
+            Sebelum Anda belajar lebih jauh tentang coding C++, tentu Anda harus tahu dulu dong keunggulan bahasa pemrograman ini. 
+            Yuk simak lebih lanjut! <br><br>
+
+            <b>1. Portabel</b>  <br>
+            Bahasa pemrograman C++ itu portabel. Artinya, Anda bisa melakukan coding, lalu melakukan compile pada sistem operasi 
+            yang berbeda-beda. <br><br>
+
+            Misalnya, Anda bisa menulis kode di sistem operasi Linux dan melakukan compile kode tersebut di Windows. <br>
+            Dengan kata lain, saat belajar pemrograman c++, Anda bebas menggunakan sistem operasi apapun. <br><br>
+
+            <b>2. Object Oriented</b>  <br>
+            C++ adalah bahasa pemrograman yang object oriented atau berfokus pada objek. Artinya, data dan function disatukan 
+            dalam kelas dan objek untuk bekerjasama memecahkan sebuah masalah. <br><br>
+
+            Objek yang saling terkait akan mempercepat penulisan kode. Sebab, Anda bisa menggunakan kode class yang sama melalui 
+            fitur inheritance untuk menghindari pengulangan kode. OOP juga memudahkan Anda untuk mendeteksi permasalahan apabila 
+            ada kendala pada aplikasi. <br><br>
+
+            <b>3. Mudah Mengatur Memori</b>  <br>
+            Bahasa pemrograman C++ memiliki Dynamic Memory Allocation atau kemampuan mengatur memori dengan dinamis. Dengan 
+            pengaturan tersebut, Anda lebih mudah mendapatkan memori tambahan saat program berjalan. Kemudahan ini cukup membantu 
+            programmer untuk mengatur Linked List atau Tree sesuai kebutuhan. <br><br>
+
+            <b>4. Memiliki Skalabilitas yang Baik</b> <br>
+            C++ memiliki skalabilitas yang cukup baik. Artinya, program yang dibuat bisa dikembangkan sesuai kebutuhan Anda. Jadi, 
+            Anda bisa membuat program sederhana yang kecil dulu sebelum mengembangkannya menjadi aplikasi yang lebih besar. <br><br>
+
+            <b>5. Eksekusi Lebih Cepat</b>
+            Bahasa pemrograman C++ adalah bahasa yang memungkinkan Anda melakukan low level manipulation. Artinya, meskipun 
+            merupakan sebuah high level language, C++ mampu membuat eksekusi kode bisa berjalan lebih cepat di komputer karena 
+            minim jeda waktu saat interpretasi kode yang dilakukan.
+        </div>
+    </font> <br><br>
+
+    <font face="lucida console" size="5px" color="#0a5169">
+        <b>Contoh Program  C++ yang Sering Digunakan </b><hr>
+    </font>
+    <font face="monospace" size="3px" color="black">
+        <div>
+            Setelah mempelajari konsep dasar bahasa pemrograman C++, Anda bisa menggunakannya untuk berbagai pengembangan aplikasi. Berikut ini adalah contoh aplikasi 
+            yang menggunakan bahasa pemrograman C++: <br><br>
+
+            <b>1. Aplikasi Grafis</b> <br>
+            Coding C++ banyak digunakan untuk mengembangkan aplikasi pengolah grafis. Misalnya, Adobe Photoshop Adobe Illustrator, 
+            Adobe dan Premiere. Sebagian aplikasi ini membutuhkan proses image processing yang cukup intensif dan C++ dianggap 
+            cukup sesuai untuk membangun program tersebut. Nah, jika belajar pemrograman c++, bukanlah suatu hal yang mustahil 
+            bila di masa mendatang Anda bisa menciptakan software kompleks seperti yang kami sebutkan di atas. <br><br>
+
+            <b>2. Software Games</b> <br>
+            Bahasa pemrograman C++ juga digunakan untuk mengembangkan software games 3D yang rumit. Salah satu game terkenal yang 
+            dikembangkan dengan C++ adalah Call of Duty: Black Ops II. C++ cocok untuk pengembangan game karena kebutuhan proses 
+            eksekusi yang cepat. Nah, dengan kemampuan low level manipulation, C++ tentu mampu melakukannya lebih baik dibanding 
+            bahasa pemrograman lain.  <br><br>
+
+            <b>3. Browser</b> <br>
+            Cukup banyak browser terkenal yang dikembangkan dengan bahasa pemrograman C++ seperti Google Chrome dan Mozilla 
+            Firefox. Salah satu alasannya tentu adalah portability yang dimiliki oleh C++. Sebab, sebuah browser tentu akan 
+            dibuat agar multiplatform untuk memudahkan penggunanya. <br><br>
+
+            Pun demikian, sebuah browser biasanya tidak hanya dikembangkan dengan bahasa pemrograman C++ saja, tapi juga dengan 
+            bahasa lain seperti Java dan lainnya. <br><br>
+
+            <b>4. Akses Database</b> <br>
+            Bahasa pemrograman C++ banyak digunakan untuk mengembangkan database.  Misalnya, MySQL dan MongoDB. Sebab, bahasa 
+            pemrograman C++ termasuk bahasa modern yang portable untuk mengakses banyak library database. <br><br>
+
+            <b>5. Media Player</b> <br>
+            C++ juga bisa Anda digunakan untuk membuat aplikasi media player seperti Winamp Player yang cukup mumpuni sebagai 
+            media untuk memainkan file audio dan video. <br><br>
+
+            <b>6. Sistem Operasi</b>  <br>
+            Sebagian besar sistem operasi dikembangkan dengan C++, seperti Windows dan Mac OS. Namun tentu saja dengan didukung 
+            oleh bahasa pemrograman lain, misalnya Swift. <br><br>
+
+            Salah satu alasan utama penggunaan coding C++ pada sistem operasi adalah kecepatan eksekusi di komputer yang menjadi 
+            kunci sebuah OS dapat berjalan dengan baik. 
+        </div>
+    </font><br><br>
+    
+    
+  </div><br>
+  <footer class="footer-distributed">
+    <div class="footer-right">
+        <a href="https://instagram.com/feizazharfan"><i class="uil uil-instagram"></i></a>
+        <a href="https://twitter.com/pe_peja"><i class="uil uil-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/muhammad-feiza-zharfan-p-329898218"><i class="uil uil-linkedin"></i></a>	
+        <a href="https://github.com/fzmaker"><i class="uil uil-github"></i></a>
+    </div>
+
+  <div class="footer-left">
+    <p class="footer-links">
+        <a class="link-1" href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="course.html">Course</a>
+    </p>
+
+    <p>Codingku &copy; 2022</p>
+</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahasa PHP</title>
+    <link rel="stylesheet" href="bahasa.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<style>
+    body{
+        background-image: url('honeycomb.jpg');
+        @media only screen and (max-width:500px)
+        }
+</style>
+
+<body>
+  <div class="text" >
+    <font face="lucida console" size="5px" color="#0a5169">
+       <b>Halo Coders!</b> <hr>
+    </font>
+
+    <font face="monospace" size="3px" color="black">
+    <div>
+        Perkembangan website dari tahun ke tahun mengalami transformasi yang cukup signifikan. Melalui pengembangan bahasa 
+        pemrograman yang lebih variatif dan lebih mudah untuk dipelajari. Salah satu bahasa pemrograman yang paling sering 
+        digunakan oleh developer untuk membuat website dinamis adalah PHP. <br><br>
+
+        Nah, bagi yang masih belum mengetahui bahasa ini, kami akan memberikan tutorial dasar mengenai PHP supaya anda dapat 
+        mengetahui fungsi, sintaks dasar, hingga kelebihan dari penggunaan PHP. Selain itu, kami juga akan membahas berkaitan 
+        dengan penggunaan framework atau kerangka kerja pada PHP.
+    </div>
+    </font> <hr><br>
+
+    <center>
+        <img src="php.png" alt="c_icon" width="200px" > <br>
+    </center>  
+    <font face="lucida console" size="5px" color="#d49139">
+        <b>Apa itu PHP</b><hr>
+    </font>
+    <font face="monospace" size="3px" color="black">
+        <div>
+            PHP atau Hypertext Preprocessor adalah bahasa pemrograman yang berjalan pada server side scripting dan bersifat open 
+            source (sumber terbuka). Untuk penggunaan dari bahasa ini sering digunakan untuk pembuatan aplikasi berbasis website 
+            yang berjalan secara dinamis, sehingga dapat terintegrasi dengan basis data (database). <br><br>
+            PHP banyak digunakan untuk pembuatan website untuk kebutuhan ecommerce, sistem informasi, maupun landing page. Karena 
+            PHP tergolong dalam bahasa pemrograman berbasis server-side, maka script yang digunakan akan diproses oleh server. 
+            Jenis server yang sering dipakai adalah Apache, Nginx, dan LiteSpeed. 
+        </div>
+    </font> <br>
+
+    <font face="lucida console" size="5px" color="#0a5169">
+        <b>Sejarah PHP</b><hr>
+    </font>
+    <font face="monospace" size="3px" color="black">
+        <div>
+            Sejarah pertama kali PHP diciptakan oleh Rasmus Lerdorf yang merupakan seorang pemrograman bahasa C yang bertujuan 
+            untuk mencatat jumlah pengunjung yang masuk pada halaman beranda (homepage). Pada tahun 1995, PHP/FI (Form Interpreter) 
+            dirilis dengan kemampuan untuk membangun tampilan aplikasi web (web app), melakukan pemrosesan form, serta mendukung 
+            (supporting) data pada MySQL. <br><br>
+            Karena semakin banyak dan antusias dari pengguna internet, akhirnya pada pertengahan tahun 1997, Rasmus Lerdorf 
+            menyerahkan pengembangannya kepada tim developer yang terdiri dari Zeev Suraski dan Andi Gutmans. Sehingga, 
+            terciptalah versi PHP 3.0 yang memiliki dukungan luas terhadap database (Oracle dan MySQL). <br><br>
+            Selanjutnya, seiring berkembangnya teknologi informasi dan penggunaan website yang telah mendukung HTML5, maka PHP 
+            mengalami beberapa peningkatan versi. Dimulai dari PHP versi 4.0 hingga 8.0 yang memiliki fitur dan fungsionalitas 
+            yang lebih optimal. Dengan fitur yang lebih advanced, maka bahasa pemrograman ini mampu untuk menangani website 
+            dengan skala dan trafik yang besar dan kompleks.
+        </div>
+    </font> <br>
+
+    <font face="lucida console" size="5px" color="#d49139">
+        <b>Fungsi PHP dalam Pengembangan Website</b><hr>
+    </font>
+    <font face="monospace" size="3px" color="black">
+        <div>
+            Dalam membuat halaman website, sebenarnya tidak terlalu membutuhkan bahasa pemrograman PHP. Cukup dengan menggunakan 
+            HTML dan CSS saja sudah bisa membuat tampilan web secara statis dan hanya tersusun konten saja. Namun, untuk 
+            pengembangan website yang membutuhkan integrasi dengan server serta kebutuhan database, maka PHP sangat dibutuhkan 
+            sebagai penghubung antara web statis dengan server dan database. <br><br>
+            Website dinamis juga dapat digunakan untuk menyimpan data ke dalam database, selain itu juga dapat membuat halaman 
+            situs berubah sesuai dengan hasil input dari user. Jika anda sering menuliskan form pada halaman situs, maka hasil 
+            data yang telah dikirim akan diproses melalui PHP. Selain itu, bahasa pemrograman PHP biasanya juga dapat disisipkan 
+            ke dalam file atau dokumen HTML. 
+        </div><br>
+    </font> <br><br>
+
+    <font face="lucida console" size="5px" color="#0a5169">
+        <b>Sintaks Dasar dari PHP</b><hr>
+    </font>
+    <font face="monospace" size="3px" color="black">
+        <div>
+            Setelah mengetahui apa itu PHP, selanjutnya kita akan membahas terkait dengan sintaks dasar yang digunakan dalam 
+            menyusun algoritma dan struktur data dari PHP. Pertama, untuk melakukan proses coding, dengan menuliskan terlebih 
+            dahulu <b>(?php</b> dan ditutup dengan 
+            <b>?></b>, sebagai contoh: <br><br>
+        </div>
+    </font>
+    <div class="container">
+        (?php <br>
+            echo “Halo, Saya admin Sekawan Media”; <br>
+        ?>
+      </div> <br><br>
+
+      <font face="monospace" size="3px" color="black">
+        <div>
+            Jadi, fungsi dari <b>echo</b> adalah sebuah perintah untuk menampilkan teks. Selanjutnya, berkaitan dengan penggunaan 
+            variabel pada PHP dan bersifat case sensitive. Maksudnya, penggunaan dari huruf kapital dan kecil akan sangat 
+            berpengaruh pada output yang dihasilkan, sebagai 
+            contoh: <br><br>
+        </div>
+    </font>
+    <div class="container">
+        (?php <br>
+            $layanan = “Jasa pembuatan aplikasi”; <br>
+        echo $layanan; <br>
+        ?> 
+      </div><br><br>
+
+      <font face="monospace" size="3px" color="black">
+        <div>
+            Dari kode program diatas, komponen terpenting untuk mendeklarasikan sebuah variabel adalah dengan menambahkan karakter 
+            <b>$</b> pada awal variabel. Dan pastikan untuk memanggil variabel tersebut sesuai dengan variabel yang ditulis. 
+            Apabila variabel yang anda tulis memiliki perbedaan dalam penulisan huruf kapital, maka akan berdampak pada tampilan 
+            error. <br><br>
+
+            Dan sintaks dasar yang harus anda ketahui adalah penggunaan fitur komentar untuk memudahkan dalam proses pengembangan 
+            suatu program. Untuk menampilkan komentar pada PHP, anda perlu menuliskan karakter <b>//</b> atau <b>/*</b>. 
+            Tujuan dari penggunaan komentar agar kode program yang anda tulis tidak dijalankan atau diproses oleh sistem. 
+            Contoh penerapannya adalah sebagai berikut:
+        </div>
+    </font>
+    <div class="container">
+        (?php <br>
+        // Ini contoh komentar sebaris <br>
+        echo “Selamat Pagi!”; <br>
+        /* <br>
+        Contoh komentar lebih dari satu baris <br>
+        */ <br>
+        ?>
+      </div><br><br>
+
+      <font face="lucida console" size="5px" color="#d49139">
+        <b>Struktur Penulisan</b><hr>
+      </font>
+    <font face="monospace" size="3px" color="black">
+        <div>
+            Untuk struktur penulisan dari PHP sendiri, dibagi menjadi dua jenis, pertama adalah PHP Native dan yang kedua adalah 
+            Framework PHP. Berikut merupakan beberapa penjelasan terkait dengan kedua struktur tersebut. <br><br>
+            <b>1. PHP Native</b> <br>
+            Native adalah bentuk penulisan kode menggunakan PHP yang dimulai dari nol untuk merancang sebuah halaman website. 
+            PHP Native biasanya sering digunakan oleh para developer yang mempunyai keahlian khusus dalam hal coding dan menyusun 
+            sebuah algoritma dan struktur data yang baik. Sehingga dapat memungkinkan untuk membuat alur kerangka kerja yang 
+            optimal dan memiliki fungsionalitas tinggi. <br><br>
+
+            <b>2. Framework PHP</b> <br>
+            Ketika berbicara masalah framework, maka kita akan berfokus dalam bagaimana merancang sebuah alur atau kerangka kerja 
+            yang baik. Sehingga, dapat memungkinkan untuk bekerja secara lebih cepat, akurat, dan optimal. Tentunya, di dalam PHP 
+            sendiri juga memiliki framework khusus yang membantu tugas dari pengembang aplikasi berbasis web. <br><br>
+
+            Beberapa framework PHP yang populer dan banyak digunakan saat ini adalah CodeIgniter, Laravel, Symfony, Yii, dan Zend 
+            framework. Apabila anda telah mahir dalam bidang native, alangkah lebih baik jika memulai bekerja dengan menggunakan 
+            sebuah framework. Dampak positif dari pengguna kerangka kerja adalah proses pengembangan software dapat berjalan lebih 
+            cepat dan sistem keamanan yang lebih terjamin.
+        </div><br>
+    </font> <br><br>
+
+    <font face="lucida console" size="5px" color="#0a5169">
+        <b>Kesimpulan</b><hr>
+    </font>
+    <div>
+        1. PHP adalah bahasa pemrograman yang digunakan untuk mengembangkan website dinamis dan berjalan pada server side scripting.<br>
+        2. Keunggulan dari PHP terletak pada proses integrasi sistem dengan server serta database. <br>
+        3. Untuk struktur penulisan dari PHP terbagi menjadi dua jenis, yaitu native dan framework. Dimana, framework yang sering 
+        digunakan saat ini adalah CodeIgniter (CI) dan Laravel.
+    </div><br><br>
+    
+    
+    </div><br>
+<footer class="footer-distributed">
+        <div class="footer-right">
+            <a href="https://instagram.com/feizazharfan"><i class="uil uil-instagram"></i></a>
+            <a href="https://twitter.com/pe_peja"><i class="uil uil-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/muhammad-feiza-zharfan-p-329898218"><i class="uil uil-linkedin"></i></a>	
+            <a href="https://github.com/fzmaker"><i class="uil uil-github"></i></a>
+        </div>
+
+        <div class="footer-left">
+            <p class="footer-links">
+             <a class="link-1" href="home.html">Home</a>
+             <a href="about.html">About</a>
+             <a href="course.html">Course</a>
+            </p>
+
+            <p>Codingku &copy; 2022</p>
+        </div>
+    </footer>
+</body>
+</html>

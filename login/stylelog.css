@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    background:rgb(10, 81, 105);
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+  }
+  .center h1{
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid silver;
+  }
+  .center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  form .textdalem{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+  }
+  .textdalem input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  .textdalem label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+  }
+  .textdalem span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: rgb(212, 145, 57);
+    transition: .5s;
+  }
+  .textdalem input:focus ~ label,
+  .textdalem input:valid ~ label{
+    top: -5px;
+    color: rgb(212, 145, 57);
+  }
+  .textdalem input:focus ~ span::before,
+  .textdalem input:valid ~ span::before{
+    width: 100%;
+  }
+  .pass{
+    margin: -5px 0 20px 5px;
+    color: rgb(212, 145, 57);
+    cursor: pointer;
+  }
+  .pass:hover{
+    text-decoration: underline;
+  }
+  .center .signup_login .input-group .btn{
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background-color: turquoise;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+.center .signup_login .textdalem .input-group .btn:hover{
+    transform: translate(-5px);
+    background: #6c5ce7;
+}
+  .signup_link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+  }
+  .signup_link a{
+    color: rgb(212, 145, 57);
+    text-decoration: none;
+  }
+  .signup_link a:hover{
+    text-decoration: underline;
+  }
+
+  .center .signup-login .input-group .btn{
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background: rgb(212, 145, 57);
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+  }
+  .container .signup-login .input-group .btn:hover{
+    transform: translate(-5px);
+    background: rgb(212, 145, 57);
+  } 
